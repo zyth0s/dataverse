@@ -1,0 +1,12 @@
+
+Crime offences by category
+===========================
+
+SOURCE: Eurostat
+Code: tps00044
+Query builder: http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/query-builder
+
+
+
+#SOURCE: http://appsso.eurostat.ec.europa.eu/nui/setupDownloads.do
+#CSV, single file, formatting: 1,234.56

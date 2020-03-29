@@ -1,0 +1,18 @@
+
+Crime offences by category
+===========================
+
+SOURCE: Eurostat
+Code: hlth_rs_bds
+Query builder: http://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/query-builder
+
+
+
+#SOURCE: http://appsso.eurostat.ec.europa.eu/nui/setupDownloads.do
+#CSV, single file, formatting: 1,234.56
+
+
+Further reading
+---------------
+doi: 10.1007/s00134-012-2627-8
+doi: 10.1097/MCC.0b013e32835914d5

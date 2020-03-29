@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsonstat@0.13.3/json-stat.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/eurostat/eurostat.js@0.9.14/js/eurostat-lib.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/eurostat/eurostat.js@0.9.14/js/eurostat-map.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/eurostat/eurostat.js@0.9.14/js/eurostat-tooltip.js"></script>
+
+<svg id="map"></svg>
+
+<script>
+	EstLib.map()
+	.width(900)
+	.scale("20M")
+	.NUTSyear(2016)
+	//.datasetCode("demo_r_gind3")
+	//.datasetCode("crim_gen_reg")
+	//.datasetCode("tour_cap_nuts3") // 500-100000
+	//.datasetCode("aei_pr_soiler") // [0.1,0.2,0.5,0,1,2,3,4,5]
+	//.datasetCode("demo_r_death") // [0.1,0.2,0.5,0,1,2,3,4,5]
+	//.datasetCode("demo_r_find3") // [0.1,0.2,0.5,0,1,2,3,4,5]
+	.datasetCode("demo_r_birth") // [0.1,0.2,0.5,0,1,2,3,4,5]
+  //.filters({animals:A2300F,geo: AT13]})
+	.classifMethod("threshold").threshold([500,1000,2000,5000,10000,20000,50000])
+
+	.unitText("births/year")
+	.tooltipShowFlags(false)
+
+	.legendTitleText("births (per year)")
+	.legendLabelDecNb(0)
+	.legendBoxHeight(210)
+	.legendBoxWidth(190)
+
+	.build();
+</script>
+
