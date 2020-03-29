@@ -12,3 +12,7 @@ Sources:
 * EPdata    # Europa Press
 * Data.gov  # USA
 * datos.gov.es
+
+Examples:
+
+![Physicians COVID-19 countries](./eurostat/health/tps00044/practising_physicians.svg)
